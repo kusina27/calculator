@@ -1,30 +1,30 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Birthday Calculator</title>
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-<script src="./script.java" </script></script>
+<html>
+<head>
+    <title>Birthday calculator</title>
+	<link rel='stylesheet' href='style.css'/>
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 
-
-
-  </head>
-
+	<script src='./script.java'></script>
+</head>
 <body>
-  <h1>Birthday calculator</h1>
-
-
-    <p>Welcome to my Birthday calculator app.The main function of this application is to show the user
-         the specific day of the week they were born by filling thier birthday month date and year on a form provided
-         I hope you enjpoy using my application.The app uses akan names derived from Ghana to display the users day of birth depending on their gender. Thankyou!
-    </strong></p>
+    <div id="main_container">
+        <div id="birth_date_input">Birth Date: <input type="date" id="birth_date"></div>
+        <br/>
 <form>
- <input type="radio" name="gender" value="male" checked>Male<br>
-    
-    <input type="radio" name="gender" value="female">Female
-    
-    </form>
-</script>
+<input type="radio" name="gender" value="male">Male
+<input type="radio" name="gender" value="female">Female
+</form>
+
+
+
+     <div id="calculate">Calculate day of birth</div>
+
+        <div id="age_container"><span id="exact_age">Day</span></div>
+        
+        <p>About the app:
+          The app is mainly created to allow the user to fill in their birthdate the automatically generate the exact day of the week the user was born.The unique feature about this app is that it also uses akan names derived from Ghana to represent the day of the week the user was born depending on the users gender.Thank you!
+      
+        </p>
+    </div>
 </body>
 </html>
-
